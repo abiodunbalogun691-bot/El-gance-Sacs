@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élégance Sacs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Navigation principale">
+            <h1>Élégance Sacs</h1>
+
+            <button type="button" id="bouton-panier">
+                Panier
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="presentation">
+            <h2 id="presentation">Bienvenue chez Élégance Sacs</h2>
+
+            <p>
+                Découvrez nos modèles de sacs et préparez votre demande
+                de commande directement sur WhatsApp.
+            </p>
+        </section>
+
+        <section aria-labelledby="catalogue">
+            <h2 id="catalogue">Nos sacs</h2>
+
+            <div id="grille-produits">
+
+                <article>
+                    <img
+                        src="images/sac-01.jpg"
+                        alt="Sac Classique"
+                    >
+
+                    <h3>Sac Classique</h3>
+
+                    <p>15 000 FCFA</p>
+
+                    <p>
+                        Un sac élégant et simple, adapté aux sorties
+                        et aux occasions du quotidien.
+                    </p>
+
+                    <button type="button" disabled>
+                        Voir les détails
+                    </button>
+
+                    <button type="button" disabled>
+                        Ajouter au panier
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <dialog id="fiche-produit">
+            <h2>Détails du produit</h2>
+
+            <div id="details-produit">
+                <p>Les détails du produit seront affichés ici.</p>
+            </div>
+
+            <button type="button" id="ajouter-panier-details">
+                Ajouter au panier
+            </button>
+
+            <button type="button" id="fermer-fiche-produit">
+                Fermer
+            </button>
+        </dialog>
+
+        <section aria-labelledby="panier">
+            <h2 id="panier">Mon panier</h2>
+
+            <div id="liste-panier">
+                <p>Votre panier est vide.</p>
+            </div>
+
+            <p>
+                Total :
+                <strong id="total-panier">0 FCFA</strong>
+            </p>
+
+            <button type="button" id="vider-panier">
+                Vider le panier
+            </button>
+
+            <button type="button" disabled>
+                Passer à la demande
+            </button>
+        </section>
+
+        <section aria-labelledby="commande">
+            <h2 id="commande">Préparer ma demande</h2>
+
+            <form id="formulaire-commande">
+
+                <div>
+                    <label for="prenom">Prénom</label>
+                    <input
+                        type="text"
+                        id="prenom"
+                        name="prenom"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="commune">Commune</label>
+                    <input
+                        type="text"
+                        id="commune"
+                        name="commune"
+                        required
+                    >
+                </div>
+
+                <button type="submit" disabled>
+                    Voir le récapitulatif
+                </button>
+
+            </form>
+        </section>
+
+        <section aria-labelledby="resume">
+            <h2 id="resume">Récapitulatif de la demande</h2>
+
+            <div id="resume-commande">
+                <p>
+                    Le récapitulatif de votre demande apparaîtra ici.
+                </p>
+            </div>
+
+            <button type="button" disabled>
+                Ouvrir WhatsApp
+            </button>
+
+            <button type="button" disabled>
+                Modifier ma demande
+            </button>
+
+            <p>
+                Livraison non incluse. Disponibilité et livraison à
+                confirmer avec la vendeuse.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Élégance Sacs</p>
+
+        <p>
+            Disponibilité et livraison à confirmer avec la vendeuse.
+        </p>
+    </footer>
+
+</body>
+</html>
